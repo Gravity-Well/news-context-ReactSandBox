@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+
+import NewsList from "./component/NewsList"
+import Description from "./component/Description"
+
+import NewsState from "./context/news/NewsState"
+
+import "bootstrap/dist/css/bootstrap.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NewsState>
+      <div className="d-flex flex-row justify-content-start h-100">
+        <NewsList  />
+        {/* <Description /> */}
+      </div>
+    </NewsState>
   );
 }
 
