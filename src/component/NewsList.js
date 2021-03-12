@@ -16,7 +16,7 @@ const NewsList = () => {
           ? NewsContext.news.map((news) => (
               <a
                 key={news.id}
-                href="#!"
+                 href="#!"
                 onClick={() => NewsContext.getDescription(news.id)}
                 className="list-group-item list-group-item-action text-truncate"
               >

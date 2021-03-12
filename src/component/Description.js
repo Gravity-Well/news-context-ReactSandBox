@@ -5,7 +5,7 @@ import newsContext from "../context/news/NewsContext";
 const Description = () => {
   const NewsContext = useContext(newsContext);
 
-  console.log(NewsContext.activeNews?.title);
+  console.log(NewsContext.activeNews.title);
 
   const { activeNews } = NewsContext;
   return (

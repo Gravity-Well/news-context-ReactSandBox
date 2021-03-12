@@ -12,7 +12,7 @@ function App() {
     <NewsState>
       <div className="d-flex flex-row justify-content-start h-100">
         <NewsList  />
-        {/* <Description /> */}
+        <Description />
       </div>
     </NewsState>
   );

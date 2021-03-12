@@ -3,6 +3,7 @@ import { GET_NEWS, GET_DESCRIPTION } from "../../types/types"
 export default (state, action) => {
   const { payload, type } = action;
 
+
   switch (type) {
     case GET_NEWS:
       return {
@@ -11,6 +12,7 @@ export default (state, action) => {
       };
     case GET_DESCRIPTION:
       return {
+       
         ...state,
         activeNews: payload,
       };

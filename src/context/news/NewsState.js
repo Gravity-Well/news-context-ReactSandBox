@@ -16,6 +16,7 @@ const NewsState = (props) => {
   const getNews = async () => {
     try {
       let res = await axios.get("https://node-hnapi.herokuapp.com/news");
+      // let res = await axios.get("https://jsonplaceholder.typicode.com/todos");
       let { data } = res;
 
       dispatch({ type: GET_NEWS, payload: data });
